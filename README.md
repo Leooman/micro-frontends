@@ -1,6 +1,6 @@
 # Micro-frontends
 
-> use nuxt as main service in micro-frontends project based on qiankun framework
+> use nuxt as main service in micro-frontends project based on qiankun
 
 ## :package:Build Setup
 
