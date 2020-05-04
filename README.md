@@ -1,8 +1,8 @@
-# main-nuxt
+# Micro-frontends
 
-> use nuxt as main project in micro-frontends
+> use nuxt as main service in micro-frontends project based on qiankun framework
 
-## Build Setup
+## :package:Build Setup
 
 ```bash
 # install dependencies
@@ -15,8 +15,13 @@ $ yarn dev
 $ yarn build
 $ yarn start
 
-# generate static project
-$ yarn generate
+# publish gh-pages
+$ yarn deploy
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## :book:Acknowledgements
+
+- [single-spa](https://single-spa.js.org/) A framework for bringing together multiple javascript microfrontends in a frontend application
+- [qiankun](https://qiankun.umijs.org/) An implementation of [Micro Frontends](https://micro-frontends.org/) which based on [single-spa](https://github.com/CanopyTax/single-spa)
+- [import-html-entry](https://github.com/kuitos/import-html-entry/) An assets loader which supports html entry
+
