@@ -7,7 +7,7 @@ export default () => {
 	registerMicroApps([{
 		name:"vue-dev",
 		// entry:"//localhost:8081",
-		entry:"//leooman.com/Vadmin/",
+		entry:"//leooman.com/visual/",
 		container:"#sub-app",
 		activeRule: location => location.pathname.startsWith('/micro-frontends/vue'),
 	}],{
