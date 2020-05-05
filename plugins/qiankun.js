@@ -12,19 +12,13 @@ export default () => {
 		activeRule: location => location.pathname.startsWith('/micro-frontends/vue'),
 	}],{
 		beforeLoad:[
-			app => {
-				console.log("before load",app)
-			}
+			app => {}
 		],
 		beforeMount:[
-			app => {
-				console.log("before mount",app)
-			}
+			app => {}
 		],
 		afterUnmount:[
-			app => {
-				console.log("after unload",app)
-			}
+			app => {}
 		]
 	})
 
