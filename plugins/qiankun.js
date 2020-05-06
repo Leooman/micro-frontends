@@ -5,11 +5,16 @@
 import { registerMicroApps,runAfterFirstMounted,setDefaultMountApp,start } from "qiankun"
 export default () => {
 	registerMicroApps([{
-		name:"vue-dev",
+		name:"vue-app",
 		// entry:"//localhost:8081",
 		entry:"//leooman.com/visual/",
 		container:"#sub-app",
 		activeRule: location => location.pathname.startsWith('/micro-frontends/vue'),
+	},{
+		name:"nuxt-app",
+		entry:"//leooman.com/workbench/",
+		container:"#sub-app",
+		activeRule: location => location.pathname.startsWith('/micro-frontends/nuxt'),
 	}],{
 		beforeLoad:[
 			app => {}

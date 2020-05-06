@@ -3,6 +3,7 @@
     <div class="header">
       <nuxt-link to="/">HOME</nuxt-link>
       <nuxt-link to="/vue">vue</nuxt-link>
+      <nuxt-link to="/nuxt">nuxt</nuxt-link>
     </div>
     <div id="sub-app"></div>
   </div>
