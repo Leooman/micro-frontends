@@ -1,4 +1,4 @@
-
+const resolve = require('path').resolve
 export default {
   mode: 'spa',
   globalName: process.env.npm_package_name,
@@ -24,13 +24,15 @@ export default {
   ** Global CSS
   */
   css: [
-    
+    '@/assets/css/normalize.css',
+    'element-ui/lib/theme-chalk/index.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/qiankun'
+    '@/plugins/qiankun',
+    '@/plugins/element-ui'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -51,7 +53,14 @@ export default {
   axios: {
   },
   router: {
-    base: process.env.NODE_ENV === "production" ? '/micro-frontends/' : '/'
+    base: process.env.NODE_ENV === "production" ? '/micro-frontends/' : '/',
+    extendRoutes(routes) {
+      routes.push({
+        name: 'home',
+        path: '/micro-frontends',
+        component: resolve(__dirname, 'pages/index.vue')
+      })
+    }
   },
   /*
   ** Build configuration

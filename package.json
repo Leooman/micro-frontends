@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "element-ui": "^2.13.2",
     "nuxt": "^2.0.0",
     "qiankun": "^2.0.11"
   },
