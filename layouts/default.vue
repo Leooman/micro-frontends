@@ -45,7 +45,6 @@ export default {
   align-items: center;
   font-size: 20px;
   overflow: hidden;
-  margin-bottom: 10px;
 }
 .menu{
   width: 100%;
