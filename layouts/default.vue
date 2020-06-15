@@ -52,4 +52,7 @@ export default {
 .body{
   flex: 1;
 }
+.body>div{
+  height: 100%;
+}
 </style>
