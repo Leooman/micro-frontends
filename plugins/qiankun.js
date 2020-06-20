@@ -9,7 +9,7 @@ export default () => {
 		// entry:"//localhost:8081",
 		entry:"//leooman.com/visual/",
 		container:"#sub-app",
-		activeRule: location => location.pathname.startsWith('/micro-frontends/vue'),
+		activeRule: location => location.pathname.startsWith(process.env.NODE_ENV === "production" ? '/micro-frontends/vue' : '/vue'),
 	},{
 		name:"nuxt-app",
 		entry:"//leooman.com/workbench/",

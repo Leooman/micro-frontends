@@ -14,9 +14,9 @@
         <el-menu-item index="/nuxt">WORKBENCH</el-menu-item>
       </el-menu>
     </div>
-    <div id="sub-app" :class="micro.body">
-      <nuxt/>
-    </div>
+    <div id="sub-app" :class="micro.body" v-show="!$route.name"></div>
+    <router-view v-show="$route.name"/>
+    <!-- <nuxt-child v-show="$route.name"/> -->
   </div>
 </template>
 <script>
